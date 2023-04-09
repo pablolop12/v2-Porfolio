@@ -1,6 +1,6 @@
 // JavaScript
 const apiUrl = "https://api.github.com/users/pablolop12";
-const accessToken = "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";
+const accessToken = "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";
 
 fetch(apiUrl, {
   headers: {
