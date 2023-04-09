@@ -1,0 +1,284 @@
+/*
+CSS de: Pagina general
+
+# Establecimiento de parametros predeterminados, márgenes y colores
+
+@Autor: Pablo López Luján
+        github.com/pablolop12
+*/
+@font-face {
+    font-family: "Frygia-Heavy";
+    src: url(../fonts/Frygia-Heavy.ttf) format("truetype");
+}
+
+html {
+    --degr-c1: #FFC107;
+    --degr-c2: #FF5722;
+
+    --deg-circle1: red;
+    --deg-circle2: rgb(145, 2, 2);
+
+    /* hacer que el scroll sea suave */
+}
+
+#findme {
+    font-weight: lighter;
+    color: rgba(255, 255, 255, 0.634);
+    font-size: 25px
+}
+
+.miNombre {
+    text-align: center;
+}
+
+.titulo1 {
+    font-family: "Frygia-Heavy";
+    font-size: 90px;
+    margin-top: 8px;
+    line-height: 80px;
+
+}
+
+.titulo2 {
+    font-family: "Frygia-Heavy";
+    font-size: 95px;
+    margin-bottom: 8px;
+    line-height: 80px;
+
+}
+
+.icono {
+    color: #FFFFFF;
+    font-size: 25px;
+    margin-right: 8px;
+}
+
+.icono2 {
+    color: #FFFFFF;
+    font-size: 45px;
+    margin-left: 7px;
+    margin-right: 7px;
+    transition: 0.2s;
+}
+
+.icono2:hover {
+    color: rgb(164, 39, 221) !important;
+    transition: 0.2s;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, rgb(39, 36, 60), rgb(31, 29, 50));
+}
+
+h1,
+h2,
+h3 {
+    color: rgb(255, 255, 255);
+}
+
+p,
+h4 {
+    color: #7e8086;
+
+}
+
+h5 {
+    color: rgba(255, 255, 255, 0.523);
+    font-weight: lighter;
+}
+
+
+.contenedor {
+    margin: auto;
+    width: 90%;
+    max-width: 1360px;
+}
+
+
+.collapse:not(.show) {
+    transition: height 0.3s ease-in-out;
+}
+
+/*Separacion de las secciones*/
+.margen {
+    margin-bottom: 50px;
+}
+
+
+.separador {
+    background: rgb(32, 10, 47);
+    background: linear-gradient(270deg, rgba(32, 10, 47, 0) 0%, rgb(255, 255, 255, 0.5) 5%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0.5) 95%, rgba(105, 16, 165, 0) 100%);
+    height: 2px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.separador-invisible {
+    height: 2px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background: rgba(255, 255, 255, 0);
+}
+
+
+
+.icono {
+    margin-left: 5px;
+    padding: 5px;
+    height: 76px;
+    width: 90px;
+    border-radius: 15px;
+
+}
+
+#pfp {
+    filter: drop-shadow(0px 7px 5px rgba(0, 0, 0, 0.171));
+}
+
+
+#top {
+    scroll-margin-top: 200px;
+}
+
+#sobremi {
+    scroll-margin-top: 100px;
+}
+
+#proyectos {
+    scroll-margin-top: 100px;
+}
+
+#aptitudes {
+    scroll-margin-top: 100px;
+}
+
+
+
+
+
+#background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 1px;
+
+
+}
+
+#background .color {
+    position: absolute;
+    filter: blur(150px)
+}
+
+section .color:nth-child(1) {
+    top: -150px;
+    width: 600px;
+    height: 600px;
+    background: rgba(142, 42, 209, 0.815);
+}
+
+section .color:nth-child(2) {
+    bottom: -150px;
+    left: 100px;
+    width: 500px;
+    height: 500px;
+    background: rgba(153, 41, 245, 0.568);
+}
+
+section .color:nth-child(3) {
+    bottom: 50px;
+    right: 100px;
+    width: 300px;
+    height: 300px;
+    background: rgb(67, 42, 209);
+}
+
+section .color:nth-child(4) {
+    bottom: -400px;
+    right: 80px;
+    width: 300px;
+    height: 300px;
+    background: rgb(100, 42, 209);
+}
+
+section .color:nth-child(5) {
+    bottom: -780px;
+    width: 600px;
+    height: 600px;
+    background: rgba(101, 42, 209, 0.479);
+}
+
+section .color:nth-child(6) {
+    bottom: -1450px;
+    left: 100px;
+    width: 600px;
+    height: 600px;
+    background: rgba(101, 42, 209, 0.671);
+
+}
+
+section .color:nth-child(7) {
+    bottom: -1400px;
+    right: 80px;
+    width: 300px;
+    height: 300px;
+    background: rgb(100, 42, 209);
+}
+
+
+.fix {
+    height: 40px;
+}
+
+
+
+#sobremi p {
+    color: rgba(255, 255, 255, 0.823);
+}
+
+.nombre-animado {
+    background: -webkit-linear-gradient(0deg,#9411da, #d606f6, #8c00ff, #d724e4, #9411da);
+    background-size: 400%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animacion 5s linear infinite;
+}
+
+@keyframes animacion {
+    0% {
+        background-position: 0%;
+    }
+
+    50% {
+        background-position: 100%;
+    }
+
+    100%{
+        background-position: 0%;
+    }
+}
+
+
+.skill h2{
+    font-size: 19px;
+    font-weight: 400;
+    color: #95979b;
+    margin: 0;
+}
+
+.skill i{
+    color: white;
+    font-size: 40px;
+    margin: auto;
+}
+
+.sicon{
+    text-align: center !important;
+}
+
+#extraskills{
+    margin-top: 22px;
+}

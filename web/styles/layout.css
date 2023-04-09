@@ -1,0 +1,174 @@
+/*
+CSS de: Layout
+
+# Diseño y estructuras de algunos bloques que se usan
+
+# Botón morado
+# Own-Block (Bloque interior)
+# Bubble (Bloque interior de Own-Block)
+# Window
+
+
+
+@Autor: Pablo López Luján
+        github.com/pablolop12
+*/
+
+.navbar .bubi {
+    padding: 5px 11px 5px 11px;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.851);
+}
+
+.bubi {
+    background: rgb(126, 14, 183);
+    margin-top: 18px;
+    margin-bottom: 25px;
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.863);
+    padding: 8px 15px 8px 15px;
+    border-radius: 6px;
+    border: none;
+    transition: 0.2s;
+
+}
+
+.bubi:hover {
+    background: rgb(181, 46, 248);
+    color: rgb(255, 255, 255);
+    transition: 0.2s;
+
+}
+
+
+/* BLOQUE GRIS INTERIOR*/
+.own-block {
+    padding: 15px;
+    transition: all 0.2s ease-in-out;
+
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+
+    background: rgba(246, 233, 255, 0.041);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(0px);
+    -webkit-backdrop-filter: blur(5.5px);
+    border: 1px solid rgba(246, 233, 255, 0.082);
+
+}
+
+.own-block:hover {
+    transform: translateY(-3px);
+
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+    /* aumentar la sombra */
+
+    background: rgba(255, 255, 255, 0.050);
+    border: 1px solid rgba(246, 233, 255, 0.1);
+}
+
+.bubble {
+    background: #ffffff13;
+    border-radius: 16px;
+    padding: 12px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    color: #7e8086;
+
+}
+
+.own-block-transparent {
+    padding: 15px;
+    margin-bottom: 24px;
+}
+
+
+/* VENTANA CANVA */
+.window {
+
+    margin-top: 105px;
+    margin-bottom: 50px;
+
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+
+    background: rgba(246, 233, 255, 0.1);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(100px);
+    -webkit-backdrop-filter: blur(5.5px);
+    border: 1px solid rgba(246, 233, 255, 0.24);
+}
+
+
+
+.window-head {
+    padding: 10px;
+}
+
+.window-body {
+    padding: 20px;
+    padding-top: 32px;
+    background-color: rgba(0, 0, 0, 0.734);
+    border-radius: 0px 0px 16px 16px;
+    border-top: 1px solid rgba(246, 233, 255, 0.24);
+}
+
+.window-title {
+    color: rgba(255, 255, 255, 0.39);
+    margin-right: 54px;
+    font-family: monospace;
+}
+
+.window2 {
+
+    margin-bottom: 100px;
+
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+
+    background: rgba(246, 233, 255, 0.1);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(100px);
+    -webkit-backdrop-filter: blur(5.5px);
+    border: 1px solid rgba(246, 233, 255, 0.24);
+}
+
+
+
+.window-head {
+    padding: 10px;
+}
+
+.window-body {
+    padding: 20px;
+    padding-top: 32px;
+    background-color: rgba(0, 0, 0, 0.714);
+    border-radius: 0px 0px 16px 16px;
+    border-top: 1px solid rgba(246, 233, 255, 0.24);
+}
+
+.window-title {
+    color: rgba(255, 255, 255, 0.39);
+    margin-right: 54px;
+    font-family: monospace;
+}
+
+.circle {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: var(--deg-circle1);
+    display: inline-block;
+    margin-right: 4px;
+    border: 1px solid var(--deg-circle2);
+    transition: all 0.2s ease-in-out;
+    /* transición suave */
+
+}
+
+.circle:hover {
+    -webkit-box-shadow: 0px 0px 17px 0px var(--deg-circle1);
+    -moz-box-shadow: 0px 0px 17px 0px var(--deg-circle1);
+    filter: drop-shadow (00px 0px 20px 0px var(--deg-circle1));
+}
