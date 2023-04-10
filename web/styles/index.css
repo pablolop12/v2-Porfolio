@@ -21,6 +21,90 @@ html {
     /* hacer que el scroll sea suave */
 }
 
+
+.loader-container {
+    position: fixed;
+    z-index: 1100;
+    height: 100%;
+    width: 100%;
+    background-color: #241f27;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .loader-text {
+    margin-bottom: 20px;
+  }
+
+  .loader {
+    border: 10px solid #f3f3f3;
+    border-top: 10px solid #aa0cd6;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    animation: spin 2s linear infinite;
+  }
+
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+
+
+
+.goTop {
+    display: none;
+    transition: all 0.2s ease-in-out;
+  }
+
+.goTop.show {
+    display: block;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    position: fixed;
+    top: 90%;
+    right: 2%;
+    z-index: 15;
+    text-align: center;
+    padding: 1px;
+    transition: all 0.2s ease-in-out;
+}
+
+.goTop.show i {
+    
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+}
+
+.goTop.show:hover{
+    color: white !important;
+}
+
+.goTop.show i:hover {
+    color: white    ;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+}
+
+
 #findme {
     font-weight: lighter;
     color: rgba(255, 255, 255, 0.634);
@@ -239,7 +323,7 @@ section .color:nth-child(7) {
 }
 
 .nombre-animado {
-    background: -webkit-linear-gradient(0deg,#9411da, #d606f6, #8c00ff, #d724e4, #9411da);
+    background: -webkit-linear-gradient(0deg, #9411da, #d606f6, #8c00ff, #d724e4, #9411da);
     background-size: 400%;
     -webkit-background-clip: text;
     background-clip: text;
@@ -256,29 +340,31 @@ section .color:nth-child(7) {
         background-position: 100%;
     }
 
-    100%{
+    100% {
         background-position: 0%;
     }
 }
 
 
-.skill h2{
-    font-size: 19px;
+
+.skill h2 {
+    font-size: 20px;
     font-weight: 400;
     color: #95979b;
     margin: 0;
 }
 
-.skill i{
+.skill i {
     color: white;
     font-size: 40px;
-    margin: auto;
+    margin: auto; 
+    padding: 6px;
 }
 
-.sicon{
+.sicon {
     text-align: center !important;
 }
 
-#extraskills{
+#extraskills {
     margin-top: 22px;
 }

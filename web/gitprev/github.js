@@ -1,12 +1,6 @@
-// JavaScript
 const apiUrl = "https://api.github.com/users/pablolop12";
-const accessToken = "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";
 
-fetch(apiUrl, {
-  headers: {
-    Authorization: `token ${accessToken}`
-  }
-})
+fetch(apiUrl)
   .then((response) => response.json())
   .then((data) => {
     const profileImg = document.querySelector(".gitprev-img");
@@ -18,6 +12,9 @@ fetch(apiUrl, {
     const username = document.querySelector(".gitprev-username");
     username.textContent =data.login;
 
+    const url = document.querySelector(".gitprev-profile");
+    url.href = data.html_url;
+
     const description = document.querySelector(".gitprev-description");
     description.textContent = data.bio;
 
@@ -26,7 +23,13 @@ fetch(apiUrl, {
 
     const publicRepos = document.querySelector(".gitprev-repos");
     publicRepos.textContent = `Repositorios públicos: ${data.public_repos}`;
+    
   })
   .catch((error) => {
     console.log(error);
   });
+
+
+
+
+
