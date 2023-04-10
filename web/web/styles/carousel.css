@@ -1,0 +1,122 @@
+/* Google Fonts - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+.proyecto {
+  height: 610px;
+}
+
+.proyecto-arriba {
+  min-width: 280px;
+  height: 307px;
+  margin-bottom: 27px;
+  border-radius: 7px;
+}
+
+.proyecto-abajo {
+  min-width: 280px;
+  height: 307px;
+  border-radius: 7px;
+}
+
+
+.head-proyecto {
+  color: white;
+  font-size: 30px;
+  text-align: right;
+  margin-bottom: 15px;
+}
+
+.title-proyecto {
+
+  text-align: center;
+}
+
+.description-proyecto {
+  text-align: justify;
+  margin-bottom: 15px;
+  padding: 10px;
+}
+
+.extras-proyecto {
+  text-align: center;
+}
+
+.badge-proyecto {
+  background-color: rgb(126, 14, 183);
+  padding: 2px 12px 5px 12px;
+  border-radius: 3px;
+  color: rgba(255, 255, 255, 0.863);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.slide-container {
+  max-width: 1120px;
+  width: 100%;
+  padding-bottom: 30px;
+
+}
+
+.slide-content {
+  margin: 0 40px;
+  overflow: hidden;
+}
+
+.card {
+  background-color: #ffffff00;
+}
+
+.swiper-navBtn {
+  color: rgb(126, 14, 183);
+  transition: color 0.3s ease;
+}
+
+.swiper-navBtn:hover {
+  color: rgb(181, 46, 248);
+  ;
+}
+
+.swiper-navBtn::before,
+.swiper-navBtn::after {
+  font-size: 35px;
+}
+
+.swiper-button-next {
+  right: -5px;
+}
+
+.swiper-button-prev {
+  left: -5px;
+}
+
+.swiper-pagination-bullet {
+  background-color: rgb(181, 46, 248);;
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: rgb(126, 14, 183);
+}
+
+@media screen and (max-width: 768px) {
+  .slide-content {
+    margin: 0 10px;
+  }
+
+  .swiper-navBtn {}
+}
